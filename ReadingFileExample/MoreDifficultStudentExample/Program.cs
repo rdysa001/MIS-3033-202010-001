@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace ClassesAndFiles
+namespace MoreDifficultStudentExample
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Student stud1 = new Student();
+            Console.WriteLine("Hello World!");
         }
     }
 }
