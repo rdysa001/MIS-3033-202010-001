@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://photos.puppyspot.com/5/listing/602465/photo/4972833_large-resize.jpg"/>
+        </Grid.Background>
+        <Button x:Name="btnClickMe" Content="Click me" HorizontalAlignment="Left" Margin="92,71,0,0" VerticalAlignment="Top" Height="59" Width="151" IsDefault="True" Click="Button_Click"/>
+        <TextBox x:Name="txtFavoriteColor" HorizontalAlignment="Left" Height="71" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Margin="241,168,0,0"/>
+        <Label x:Name="lblColor" Content="Enter your favorite color" HorizontalAlignment="Left" Margin="24,191,0,0" VerticalAlignment="Top" Width="171"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="72" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Margin="241,262,0,0" KeyDown="txtKeyDown"/>
+        <Label x:Name="lblName" Content="Enter your name" HorizontalAlignment="Left" Margin="24,286,0,0" VerticalAlignment="Top" Width="171"/>
 
     </Grid>
 </Window>
