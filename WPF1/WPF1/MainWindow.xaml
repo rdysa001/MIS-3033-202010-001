@@ -6,7 +6,17 @@
         xmlns:local="clr-namespace:WPF1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="#FF418536">
+        <Button x:Name="btnSubmit" Content="Submit Application" HorizontalAlignment="Left" Height="46" Margin="185,282,0,0" VerticalAlignment="Top" Width="180" Background="#FF499097" Click="btnSubmit_Click"/>
+        <TextBlock x:Name="blkName" HorizontalAlignment="Left" Height="20" Margin="28,94,0,0" TextWrapping="Wrap" Text="Student Name" VerticalAlignment="Top" Width="104" TextAlignment="Center"/>
+        <TextBlock x:Name="blkAddress" HorizontalAlignment="Left" Height="20" Margin="28,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" TextAlignment="Center"><Run Text="Student Address"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="blkZip" HorizontalAlignment="Left" Height="20" Margin="28,186,0,0" TextWrapping="Wrap" Text="Student ZIP Code" VerticalAlignment="Top" Width="104" TextAlignment="Center"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="24" Margin="185,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180"/>
+        <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Height="24" Margin="185,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180"/>
+        <TextBox x:Name="txtZip" HorizontalAlignment="Left" Height="24" Margin="185,186,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180"/>
+        <ListBox x:Name="listApps" HorizontalAlignment="Left" Height="283" VerticalAlignment="Top" Width="294" Margin="460,94,0,0" SelectionChanged="listApps_SelectionChanged"/>
+        <TextBlock x:Name="blkList" HorizontalAlignment="Left" Margin="460,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="294" FontSize="20" TextAlignment="Center"><Run Text="Submitted Applications"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="blkTitle" Height="44" Margin="10" TextWrapping="Wrap" Text="Student Application Entry Form" VerticalAlignment="Top" Width="592" HorizontalAlignment="Center" FontSize="36" TextAlignment="Center" FontWeight="Bold"/>
+
     </Grid>
 </Window>

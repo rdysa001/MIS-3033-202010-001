@@ -24,5 +24,18 @@ namespace WPF1
         {
             InitializeComponent();
         }
+
+        private void btnSubmit_Click(object sender, RoutedEventArgs e)
+        {
+            EntryForm entryForm = new EntryForm(txtName.Text, txtAddress.Text, Convert.ToInt32(txtZip.Text));
+            //EntryForm(txtName.Text, txtAddress.Text, Convert.ToInt32(txtZip.Text))
+
+            listApps.Items.Add(entryForm);
+        }
+
+        private void listApps_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
