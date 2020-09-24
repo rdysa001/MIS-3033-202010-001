@@ -1,0 +1,23 @@
+﻿<Window x:Class="WPF_Classes_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Classes_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="gridMain">
+        <Grid.Background>
+            <ImageBrush ImageSource="https://www.johndeerestore.com/medias/TBEK35771-Media-JDActual1200Wx1200H?context=bWFzdGVyfHJvb3R8MzIxMjI1fGltYWdlL2pwZWd8aDFjL2g0ZS84OTE1NjY5NjgwMTU4LmpwZ3w3MGZiOGQ1ODJlZGY1MWQ5MTdlYjliYjgzZmMxNDdlODYwY2Q2YjgyMDBlOWEzNmFlZTM5Yzk2ODczODRhMGZj"/>
+        </Grid.Background>
+        <ListBox x:Name="lstToys" HorizontalAlignment="Left" Height="399" Margin="519,10,0,0" VerticalAlignment="Top" Width="263" MouseDoubleClick="lstToys_MouseDoubleClick"/>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Height="42" Margin="107,210,0,0" VerticalAlignment="Top" Width="132" Click="btnSubmit_Click"/>
+        <TextBlock x:Name="blkManufacturer" HorizontalAlignment="Left" Height="23" Margin="51,29,0,0" TextWrapping="Wrap" Text="Manufacturer:" VerticalAlignment="Top" Width="86"/>
+        <TextBlock x:Name="blkName" HorizontalAlignment="Left" Height="23" Margin="51,57,0,0" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top" Width="86"/>
+        <TextBox x:Name="txtManufacturer" HorizontalAlignment="Left" Height="23" Margin="169,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139"/>
+        <TextBlock x:Name="blkPrice" HorizontalAlignment="Left" Height="23" Margin="51,85,0,0" TextWrapping="Wrap" Text="Price:" VerticalAlignment="Top" Width="86"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="23" Margin="169,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139"/>
+        <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Height="23" Margin="169,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139"/>
+
+    </Grid>
+</Window>

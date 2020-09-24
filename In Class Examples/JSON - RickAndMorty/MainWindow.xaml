@@ -1,0 +1,17 @@
+﻿<Window x:Class="JSON___RickAndMorty.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JSON___RickAndMorty"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFF52F2F">
+        <TextBlock HorizontalAlignment="Left" Height="89" Margin="152,10,0,0" TextWrapping="Wrap" Text="Rick &amp; Morty Fan Page" VerticalAlignment="Top" Width="483" FontSize="48"/>
+        <TextBlock x:Name="blkSelect" HorizontalAlignment="Left" Height="21" Margin="35,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"><Run Text="Select a Character"/><LineBreak/><Run/></TextBlock>
+        <Label x:Name="lblInfo" Content="l" HorizontalAlignment="Left" Height="169" Margin="36,179,0,0" VerticalAlignment="Top" Width="271"/>
+        <Image x:Name="imgChar" HorizontalAlignment="Left" Height="266" Margin="418,118,0,0" VerticalAlignment="Top" Width="316"/>
+        <ComboBox x:Name="cmboselect" HorizontalAlignment="Left" Height="20" Margin="33,127,0,0" VerticalAlignment="Top" Width="178" SelectionChanged="cmboselect_SelectionChanged"/>
+
+    </Grid>
+</Window>
