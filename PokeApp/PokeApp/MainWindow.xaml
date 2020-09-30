@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFEDEEF1" Offset="0"/>
+                <GradientStop Color="#FF2649E4" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <ListBox x:Name="lstPoke" HorizontalAlignment="Left" Height="295" Margin="53,49,0,0" VerticalAlignment="Top" Width="137"/>
         <Image x:Name="imgSprite" HorizontalAlignment="Left" Height="161" Margin="551,99,0,0" VerticalAlignment="Top" Width="161" OpacityMask="#FFE84545"/>
         <Button x:Name="btnGetInfo" Content="Get Pokemon" HorizontalAlignment="Left" Height="37" Margin="211,202,0,0" VerticalAlignment="Top" Width="100" Click="btnGetInfo_Click"/>
@@ -14,7 +20,8 @@
         <Label x:Name="lblWeight" Content="Weight" HorizontalAlignment="Left" Height="29" Margin="383,183,0,0" VerticalAlignment="Top" Width="48"/>
         <TextBox x:Name="txtHeight" HorizontalAlignment="Left" Height="29" Margin="436,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" FontSize="18"/>
         <TextBox x:Name="txtWeight" HorizontalAlignment="Left" Height="29" Margin="436,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" FontSize="18"/>
-        <Button x:Name="btnToggle" Content="Toggle View" HorizontalAlignment="Left" Height="42" Margin="568,293,0,0" VerticalAlignment="Top" Width="132"/>
+        <Button Content="Toggle View" HorizontalAlignment="Left" Height="47" Margin="456,278,0,0" VerticalAlignment="Top" Width="132" Click="Button_Click"/>
+        <Image x:Name="imgSpriteBack" HorizontalAlignment="Left" Height="161" Margin="551,99,0,0" VerticalAlignment="Top" Width="161" Visibility ="Hidden" OpacityMask="#FFE84545"/>
 
     </Grid>
 </Window>

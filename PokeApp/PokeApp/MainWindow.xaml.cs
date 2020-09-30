@@ -15,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Newtonsoft.Json;
 
+
 namespace PokeApp
 {
     /// <summary>
@@ -44,7 +45,6 @@ namespace PokeApp
         private void btnGetInfo_Click(object sender, RoutedEventArgs e)
         {
             Monster selectedMonster = (Monster)lstPoke.SelectedItem;
-            
 
             string selectedUrl = selectedMonster.url;
             info infoAPI;
@@ -56,13 +56,20 @@ namespace PokeApp
             txtHeight.Text = infoAPI.height.ToString();
             txtWeight.Text = infoAPI.weight.ToString();
 
-            
-            Uri uriFront = new Uri(infoAPI.front_default);
-            Uri uriBack = new Uri(infoAPI.back_default);
+
+            Uri uriFront = new Uri(infoAPI.sprites.front_default);
+            Uri uriBack = new Uri(infoAPI.sprites.back_default);
             BitmapImage pictureFront = new BitmapImage(uriFront);
             BitmapImage pictureBack = new BitmapImage(uriBack);
 
             imgSprite.Source = pictureFront;
+            imgSpriteBack.Source = pictureBack;
+            
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            imgSpriteBack.Visibility += 1;
         }
     }
 }
