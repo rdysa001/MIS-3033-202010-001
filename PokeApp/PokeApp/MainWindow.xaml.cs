@@ -23,11 +23,14 @@ namespace PokeApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        private info infoAPI;
+
         public MainWindow()
         {
             InitializeComponent();
             string url = @"https://pokeapi.co/api/v2/pokemon?offset=0&limit=1100";
             PokemonNameAPI api;
+            info infoAPI;
             using (var client = new HttpClient())
             {
                 string json = client.GetStringAsync(url).Result;
@@ -44,32 +47,40 @@ namespace PokeApp
 
         private void btnGetInfo_Click(object sender, RoutedEventArgs e)
         {
-            Monster selectedMonster = (Monster)lstPoke.SelectedItem;
-
-            string selectedUrl = selectedMonster.url;
-            info infoAPI;
-            using (var client2 = new HttpClient())
+            if (lstPoke.SelectedItem is null)
             {
-                string infoSelected = client2.GetStringAsync(selectedUrl).Result;
-                infoAPI = JsonConvert.DeserializeObject<info>(infoSelected);
+                MessageBox.Show("Please select a Pokemon");
             }
-            txtHeight.Text = infoAPI.height.ToString();
-            txtWeight.Text = infoAPI.weight.ToString();
+            else
+            {
+                Monster selectedMonster = (Monster)lstPoke.SelectedItem;
+
+                string selectedUrl = selectedMonster.url;
+                //info infoAPI;
+                using (var client2 = new HttpClient())
+                {
+                    string infoSelected = client2.GetStringAsync(selectedUrl).Result;
+                    infoAPI = JsonConvert.DeserializeObject<info>(infoSelected);
 
 
-            Uri uriFront = new Uri(infoAPI.sprites.front_default);
-            Uri uriBack = new Uri(infoAPI.sprites.back_default);
-            BitmapImage pictureFront = new BitmapImage(uriFront);
-            BitmapImage pictureBack = new BitmapImage(uriBack);
+                }
+                txtHeight.Text = infoAPI.height.ToString();
+                txtWeight.Text = infoAPI.weight.ToString();
 
-            imgSprite.Source = pictureFront;
-            imgSpriteBack.Source = pictureBack;
+
+                Uri uriFront = new Uri(infoAPI.sprites.front_default));
+                Uri uriBack = new Uri(infoAPI.sprites.back_default);
+                BitmapImage pictureFront = new BitmapImage(uriFront);
+                BitmapImage pictureBack = new BitmapImage(uriBack);
+
+                imgSprite.Source = pictureFront;
+            }
             
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            imgSpriteBack.Visibility += 1;
+            
         }
     }
 }

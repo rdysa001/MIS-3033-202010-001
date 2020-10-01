@@ -1,0 +1,15 @@
+﻿<Window x:Class="GoT_Quote.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GoT_Quote"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Get Quote" HorizontalAlignment="Left" Height="57" Margin="295,297,0,0" VerticalAlignment="Top" Width="188" Click="Button_Click"/>
+        <TextBox x:Name="txtQuote" HorizontalAlignment="Left" Height="65" Margin="113,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="557"/>
+        <Label Content="Game of Thrones Quote" HorizontalAlignment="Left" Height="73" Margin="91,34,0,0" VerticalAlignment="Top" Width="520" FontSize="48"/>
+
+    </Grid>
+</Window>

@@ -24,9 +24,14 @@ namespace PokeApp
     }
     public class info
     {
-        public string front_default { get; set; }
-        public string back_default { get; set; }
+        public  sprite sprites { get; set; }
         public int height { get; set; }
         public int weight { get; set; }
+    }
+
+    public class sprite
+    {
+        public string back_default { get; set; }
+        public string front_default { get; set; }
     }
 }
