@@ -25,6 +25,7 @@ namespace ChuckNorrisJoke
     public partial class MainWindow : Window
     {
         public string joke;
+        private JokeAPI jokeAPI;
         public MainWindow()
         {
             InitializeComponent();
@@ -57,6 +58,15 @@ namespace ChuckNorrisJoke
                 string category = cmboCategory.Text;
                 joke = @"https://api.chucknorris.io/jokes/random?category=" + category;
             }
+
+            using (var client2 = new HttpClient())
+            {
+                string jokeSelected = client2.GetStringAsync(joke).Result;
+                jokeAPI = JsonConvert.DeserializeObject<JokeAPI>(jokeSelected);
+            }
+            txtJoke.Text = jokeAPI.value.ToString();
         }
+
+        
     }
 }

@@ -11,7 +11,7 @@
             <ImageBrush ImageSource="https://cdn3.movieweb.com/i/article/2eAHRVIrNYcVlOwyU59a7UeT4Shn6e/1200:100/Chuck-Norris-80th-Birthday.jpg?fifu-post-id=2922&amp;fifu-featured=1"/>
         </Grid.Background>
         <ComboBox x:Name="cmboCategory" HorizontalAlignment="Left" Margin="33,33,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnGetJoke" Content="Get Joke" HorizontalAlignment="Left" Margin="189,33,0,0" VerticalAlignment="Top" Width="79" Height="22" Click="btnGetJoke_Click"/>
+        <Button x:Name="btnGetJoke" Content="Get Joke" HorizontalAlignment="Left" Margin="171,33,0,0" VerticalAlignment="Top" Width="128" Height="22" Click="btnGetJoke_Click"/>
         <TextBox x:Name="txtJoke" HorizontalAlignment="Left" Height="119" Margin="573,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
     </Grid>
 </Window>
