@@ -9,6 +9,6 @@ namespace ChuckNorrisJoke
 {
     class JokeAPI
     {
-        public 
+        public string value { get; set; }
     }
 }
