@@ -20,8 +20,7 @@
         <Label x:Name="lblWeight" Content="Weight" HorizontalAlignment="Left" Height="29" Margin="383,183,0,0" VerticalAlignment="Top" Width="48"/>
         <TextBox x:Name="txtHeight" HorizontalAlignment="Left" Height="29" Margin="436,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" FontSize="18"/>
         <TextBox x:Name="txtWeight" HorizontalAlignment="Left" Height="29" Margin="436,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" FontSize="18"/>
-        <Button x:Name="btnToggle" Content="Toggle View" HorizontalAlignment="Left" Height="47" Margin="456,278,0,0" VerticalAlignment="Top" Width="132" Click="Button_Click"/>
-        <Image x:Name="imgSpriteBack" HorizontalAlignment="Left" Height="161" Margin="551,99,0,0" VerticalAlignment="Top" Width="161" Visibility ="Hidden" OpacityMask="#FFE84545"/>
+        <Button x:Name="btnToggle" Content="Toggle View" HorizontalAlignment="Left" Height="47" Margin="456,278,0,0" VerticalAlignment="Top" Width="132" Click="btnToggle_Click"/>
 
     </Grid>
 </Window>
