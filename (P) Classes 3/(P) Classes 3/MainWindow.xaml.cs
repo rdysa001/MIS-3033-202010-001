@@ -30,8 +30,15 @@ namespace _P__Classes_3
                 "AK", "AL", "AR", "AS", "AZ", "CA", "CO", "CT", "DC", "DE", "FL", "GA", "GU", "HI", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MP", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR", "PA", "PR", "RI", "SC", "SD", "TN", "TX", "UM", "UT", "VA", "VI", "VT", "WA", "WI", "WV", "WY"
             };
             cmbxState.ItemsSource = states;
+
+            
         }
 
+        private void listGrads_DoubleClick(object sender, RoutedEventArgs e)
+        {
+            
+            
+        }
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
             //These two bools will let the student be added to the listbox when the conditions are met for them to both be true.

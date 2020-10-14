@@ -30,7 +30,7 @@
         <TextBox x:Name="txtStName" HorizontalAlignment="Left" Height="20" Margin="152,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtCity" HorizontalAlignment="Left" Height="20" Margin="152,247,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtZip" HorizontalAlignment="Left" Height="20" Margin="152,297,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <ListBox x:Name="listGrads" HorizontalAlignment="Left" Height="366" Margin="395,43,0,0" VerticalAlignment="Top" Width="387" FontSize="16">
+        <ListBox x:Name="listGrads" HorizontalAlignment="Left" Height="366" Margin="395,43,0,0" VerticalAlignment="Top" Width="387" FontSize="16" MouseDoubleClick="listGrads_Click">
             <ListBox.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFD6D6D6" Offset="0"/>

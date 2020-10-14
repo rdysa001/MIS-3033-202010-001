@@ -1,0 +1,24 @@
+﻿<Window x:Class="_P__Classes_3.StudentAddress"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_P__Classes_3"
+        mc:Ignorable="d"
+        Title="StudentAddress" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lblState" Content="State" HorizontalAlignment="Left" Margin="141,223,0,0" VerticalAlignment="Top" Width="109"/>
+        <Label x:Name="lblCity" Content="City" HorizontalAlignment="Left" Margin="141,192,0,0" VerticalAlignment="Top" Width="109"/>
+        <Label x:Name="lblStreet" Content="Street Name" HorizontalAlignment="Left" Margin="141,161,0,0" VerticalAlignment="Top" Width="109"/>
+        <Label x:Name="lblNumber" Content="Street Number" HorizontalAlignment="Left" Margin="141,130,0,0" VerticalAlignment="Top" Width="109"/>
+        <Label x:Name="lblZip" Content="ZIP Code" HorizontalAlignment="Left" Margin="141,254,0,0" VerticalAlignment="Top" Width="109"/>
+        <Label x:Name="lblNumResult" Content="Label" HorizontalAlignment="Left" Margin="255,130,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label x:Name="lblNameResult" Content="Label" HorizontalAlignment="Left" Margin="255,161,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label x:Name="lblCityResult" Content="Label" HorizontalAlignment="Left" Margin="255,192,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label x:Name="lblStateResult" Content="Label" HorizontalAlignment="Left" Margin="255,223,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label x:Name="lblZipResult" Content="Label" HorizontalAlignment="Left" Margin="255,254,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label x:Name="lblFirstName" Content="Label" HorizontalAlignment="Left" Margin="207,78,0,0" VerticalAlignment="Top" Width="124"/>
+        <Label x:Name="lblLastName" Content="Label" HorizontalAlignment="Left" Margin="398,78,0,0" VerticalAlignment="Top" Width="124"/>
+
+    </Grid>
+</Window>
