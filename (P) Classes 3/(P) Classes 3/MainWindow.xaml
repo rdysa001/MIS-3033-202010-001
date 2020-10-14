@@ -9,8 +9,8 @@
     <Grid x:Name="gridMain">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
-                <GradientStop Color="#FFBDBDBB" Offset="1"/>
-                <GradientStop Color="#FF6A1313" Offset="0.01"/>
+                <GradientStop Color="#FF000B4B" Offset="1"/>
+                <GradientStop Color="White" Offset="0.01"/>
             </LinearGradientBrush>
         </Grid.Background>
         <TextBlock x:Name="blkFirst" HorizontalAlignment="Left" Height="20" Margin="59,97,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Width="80" FontSize="16"/>
@@ -31,26 +31,19 @@
         <TextBox x:Name="txtCity" HorizontalAlignment="Left" Height="20" Margin="152,247,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtZip" HorizontalAlignment="Left" Height="20" Margin="152,297,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <ListBox x:Name="listGrads" HorizontalAlignment="Left" Height="366" Margin="395,43,0,0" VerticalAlignment="Top" Width="387" FontSize="16">
+            <ListBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFD6D6D6" Offset="0"/>
+                    <GradientStop Color="#FF660000" Offset="1"/>
+                </LinearGradientBrush>
+            </ListBox.Background>
             <ListBox.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.8"/>
             </ListBox.BorderBrush>
-            <ListBox.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="White"/>
-                    <GradientStop Color="#FFCFB518" Offset="1"/>
-                </RadialGradientBrush>
-            </ListBox.Background>
         </ListBox>
-        <TextBlock x:Name="blkTitle" HorizontalAlignment="Center" Height="38" Margin="10,0" TextWrapping="Wrap" Text="CONGRATULATIONS TO OUR GRADUATES!" VerticalAlignment="Top" Width="772" FontSize="34" FontWeight="Bold" TextAlignment="Center"/>
-        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Height="26" Margin="152,325,0,0" VerticalAlignment="Top" Width="120" Click="btnSubmit_Click" BorderThickness="2">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF939090" Offset="1"/>
-                    <GradientStop Color="#FFDE5B5B"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <TextBlock x:Name="blkInfo" HorizontalAlignment="Left" Height="21" Margin="18,62,0,0" TextWrapping="Wrap" Text="PLEASE ENTER YOUR STUDENT INFORMATION BELOW" VerticalAlignment="Top" Width="372" FontSize="14" FontWeight="Bold"/>
+        <TextBlock x:Name="blkTitle" HorizontalAlignment="Center" Height="38" Margin="10,0" TextWrapping="Wrap" Text="Student Contact Information List" VerticalAlignment="Top" Width="772" FontSize="34" FontWeight="Bold" TextAlignment="Center"/>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Height="26" Margin="152,325,0,0" VerticalAlignment="Top" Width="120" Click="btnSubmit_Click" BorderThickness="2" Background="#FF54C95E"/>
+        <TextBlock x:Name="blkInfo" HorizontalAlignment="Left" Height="21" Margin="18,62,0,0" TextWrapping="Wrap" Text="PLEASE ENTER STUDENT INFORMATION BELOW" VerticalAlignment="Top" Width="372" FontSize="14" FontWeight="Bold"/>
         <ComboBox x:Name="cmbxState" HorizontalAlignment="Left" Margin="152,272,0,0" VerticalAlignment="Top" Width="55" Height="20" FontSize="11"/>
 
     </Grid>
