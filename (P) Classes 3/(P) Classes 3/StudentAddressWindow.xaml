@@ -12,7 +12,7 @@
         <Label x:Name="lblStreet" Content="Street Name" HorizontalAlignment="Left" Margin="141,161,0,0" VerticalAlignment="Top" Width="109"/>
         <Label x:Name="lblNumber" Content="Street Number" HorizontalAlignment="Left" Margin="141,130,0,0" VerticalAlignment="Top" Width="109"/>
         <Label x:Name="lblZip" Content="ZIP Code" HorizontalAlignment="Left" Margin="141,254,0,0" VerticalAlignment="Top" Width="109"/>
-        <Label x:Name="lblNumResult" Content="Label" HorizontalAlignment="Left" Margin="255,130,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label x:Name="lblNumResult" Content="selectedStudent.Address." HorizontalAlignment="Left" Margin="255,130,0,0" VerticalAlignment="Top" Width="148"/>
         <Label x:Name="lblNameResult" Content="Label" HorizontalAlignment="Left" Margin="255,161,0,0" VerticalAlignment="Top" Width="148"/>
         <Label x:Name="lblCityResult" Content="Label" HorizontalAlignment="Left" Margin="255,192,0,0" VerticalAlignment="Top" Width="148"/>
         <Label x:Name="lblStateResult" Content="Label" HorizontalAlignment="Left" Margin="255,223,0,0" VerticalAlignment="Top" Width="148"/>

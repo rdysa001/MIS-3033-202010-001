@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace _P__Classes_3
 {
     /// <summary>
@@ -20,6 +21,7 @@ namespace _P__Classes_3
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
@@ -30,15 +32,12 @@ namespace _P__Classes_3
                 "AK", "AL", "AR", "AS", "AZ", "CA", "CO", "CT", "DC", "DE", "FL", "GA", "GU", "HI", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MP", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR", "PA", "PR", "RI", "SC", "SD", "TN", "TX", "UM", "UT", "VA", "VI", "VT", "WA", "WI", "WV", "WY"
             };
             cmbxState.ItemsSource = states;
-
             
+
+            Student selectedStudent = (Student)listGrads.SelectedItem;
         }
 
-        private void listGrads_DoubleClick(object sender, RoutedEventArgs e)
-        {
-            
-            
-        }
+        
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
             //These two bools will let the student be added to the listbox when the conditions are met for them to both be true.
@@ -131,6 +130,20 @@ namespace _P__Classes_3
                 student.Address = address;
                 listGrads.Items.Add(student);
             }
+        }
+        private void listGrads_DoubleClick(object sender, RoutedEventArgs e)
+        {
+            Student selectedStudent = (Student)listGrads.SelectedItem;
+            StudentAddress studentAddress = new StudentAddress();
+            studentAddress.Show();
+            studentAddress.lblNumResult.Content = selectedStudent.Address.StreetNumber;
+            studentAddress.lblNameResult.Content = selectedStudent.Address.StreetName;
+            studentAddress.lblCityResult.Content = selectedStudent.Address.City;
+            studentAddress.lblStateResult.Content = selectedStudent.Address.State;
+            studentAddress.lblZipResult.Content = selectedStudent.Address.Zipcode;
+            studentAddress.lblFirstName.Content = selectedStudent.FirstName;
+            studentAddress.lblLastName.Content = selectedStudent.LastName;
+            studentAddress.Show();
         }
     }
 }
