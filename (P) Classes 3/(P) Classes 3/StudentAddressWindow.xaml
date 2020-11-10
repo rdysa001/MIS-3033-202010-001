@@ -7,18 +7,24 @@
         mc:Ignorable="d"
         Title="StudentAddress" Height="450" Width="800">
     <Grid>
-        <Label x:Name="lblState" Content="State" HorizontalAlignment="Left" Margin="141,223,0,0" VerticalAlignment="Top" Width="109"/>
-        <Label x:Name="lblCity" Content="City" HorizontalAlignment="Left" Margin="141,192,0,0" VerticalAlignment="Top" Width="109"/>
-        <Label x:Name="lblStreet" Content="Street Name" HorizontalAlignment="Left" Margin="141,161,0,0" VerticalAlignment="Top" Width="109"/>
-        <Label x:Name="lblNumber" Content="Street Number" HorizontalAlignment="Left" Margin="141,130,0,0" VerticalAlignment="Top" Width="109"/>
-        <Label x:Name="lblZip" Content="ZIP Code" HorizontalAlignment="Left" Margin="141,254,0,0" VerticalAlignment="Top" Width="109"/>
-        <Label x:Name="lblNumResult" Content="Label" HorizontalAlignment="Left" Margin="255,130,0,0" VerticalAlignment="Top" Width="148"/>
-        <Label x:Name="lblNameResult" Content="Label" HorizontalAlignment="Left" Margin="255,161,0,0" VerticalAlignment="Top" Width="148"/>
-        <Label x:Name="lblCityResult" Content="Label" HorizontalAlignment="Left" Margin="255,192,0,0" VerticalAlignment="Top" Width="148"/>
-        <Label x:Name="lblStateResult" Content="Label" HorizontalAlignment="Left" Margin="255,223,0,0" VerticalAlignment="Top" Width="148"/>
-        <Label x:Name="lblZipResult" Content="Label" HorizontalAlignment="Left" Margin="255,254,0,0" VerticalAlignment="Top" Width="148"/>
-        <Label x:Name="lblFirstName" Content="Label" HorizontalAlignment="Left" Margin="207,78,0,0" VerticalAlignment="Top" Width="124"/>
-        <Label x:Name="lblLastName" Content="Label" HorizontalAlignment="Left" Margin="398,78,0,0" VerticalAlignment="Top" Width="124"/>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White" Offset="0"/>
+                <GradientStop Color="#FF066413" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="lblState" Content="State" HorizontalAlignment="Left" Margin="141,223,0,0" VerticalAlignment="Top" Width="109" FontWeight="Bold"/>
+        <Label x:Name="lblCity" Content="City" HorizontalAlignment="Left" Margin="141,192,0,0" VerticalAlignment="Top" Width="109" FontWeight="Bold"/>
+        <Label x:Name="lblStreet" Content="Street Name" HorizontalAlignment="Left" Margin="141,161,0,0" VerticalAlignment="Top" Width="109" FontWeight="Bold"/>
+        <Label x:Name="lblNumber" Content="Street Number" HorizontalAlignment="Left" Margin="141,130,0,0" VerticalAlignment="Top" Width="109" FontWeight="Bold"/>
+        <Label x:Name="lblZip" Content="ZIP Code" HorizontalAlignment="Left" Margin="141,254,0,0" VerticalAlignment="Top" Width="109" FontWeight="Bold"/>
+        <Label x:Name="lblNumResult" Content="" HorizontalAlignment="Left" Margin="255,130,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label x:Name="lblNameResult" Content="" HorizontalAlignment="Left" Margin="255,161,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label x:Name="lblCityResult" Content="" HorizontalAlignment="Left" Margin="255,192,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label x:Name="lblStateResult" Content="" HorizontalAlignment="Left" Margin="255,223,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label x:Name="lblZipResult" Content="" HorizontalAlignment="Left" Margin="255,254,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label x:Name="lblFirstName" Content="" HorizontalAlignment="Left" Margin="207,78,0,0" VerticalAlignment="Top" Width="124" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="lblLastName" Content="" HorizontalAlignment="Left" Margin="398,78,0,0" VerticalAlignment="Top" Width="124" FontSize="24" FontWeight="Bold"/>
 
     </Grid>
 </Window>

@@ -19,6 +19,9 @@ namespace _P__Classes_3
     /// </summary>
     public partial class StudentAddress : Window
     {
-
+        public StudentAddress()
+        {
+            InitializeComponent();
+        }   
     }
 }
