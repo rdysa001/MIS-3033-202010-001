@@ -1,0 +1,35 @@
+﻿body {
+    background-image: url(https://i.pinimg.com/originals/18/a1/ba/18a1baf06c333be998c88646387f103f.jpg);
+    background-color:black;
+    background-size:cover;
+}
+main{
+    float:left;
+    width:80%;
+}
+ul{
+    list-style:none;
+}
+li{
+    padding:5px;
+    font-size:larger;
+    font-style:italic;
+
+}
+img{
+    float:right;
+}
+nav
+{
+    width:10%;
+    height:300px;
+    background-color:darkgray;
+    float:left;
+}
+footer{
+    margin-top:320px;
+    text-align:center;
+    background-color:ghostwhite;
+    color:purple;
+}
+

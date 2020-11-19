@@ -1,0 +1,72 @@
+﻿/*Reid Dysart's Homework 4/5 Thing!*/
+body {
+    background-color: deepskyblue;
+}
+header{
+    font-size:300%;
+    text-align:center;
+}
+name{
+    background-color: mediumpurple;
+    box-shadow: black -10px 15px;
+}
+img{
+    padding:5% 5% 5% 5%;
+    width: 90%;
+    height: 90%;
+}
+
+box1 {
+    width: 25%;
+    height: 500px;
+    background-color: mediumpurple;
+    float: left;
+}
+box1:hover {
+        background-color: blueviolet;
+        transform:scale(1.1);
+}
+div {
+    background-color: rgba(0,0,0,.25);
+}
+p {
+    border-radius: 20px;
+    padding: 20px;
+    margin: 25px;
+    text-align: center;
+    background-color: white;
+}
+a:link {
+    text-decoration: none;
+}
+box2{
+    width: 25%;
+    height: 500px;
+    background-color:pink;
+    float:left;
+    justify-content:center;
+}
+box2:hover {
+    background-color: hotpink;
+    transform: scale(1.1);
+}
+box3 {
+    width: 25%;
+    height: 500px;
+    background-color: mediumpurple;
+    float: left;
+}
+box3:hover {
+    background-color: darkviolet;
+    transform: scale(1.1);
+}
+box4 {
+    width: 25%;
+    height: 500px;
+    background-color: pink;
+    float: left;
+}
+box4:hover {
+    background-color: hotpink;
+    transform: scale(1.1);
+}
